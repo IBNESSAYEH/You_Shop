@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+/* centraliser verticalement le contenu du body */
+body{
+    padding: 20px;
+    
+}
+
+/*  styler le head (debut)*/
+header{
+    width: 1200px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    color: #686AA1;
+    font-family:'Allerta Stencil', sans-serif;
+    font-size: 25px;
+}
+.logo span{
+    color: #A18A68;
+}
+nav{
+    width: 500px;
+    height: 27px;
+    display: flex;
+    
+    justify-content: space-between;
+   
+}
+nav ul{
+    width: 318px;
+    height: 7px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .list_icon{
+    width: 200px;
+    padding-top: 25px;
+}
+nav .list_icon img{
+    width: 18px;
+}
+
+nav ul:first-child{
+    border-right: 1px solid #707070;
+}
+/*  styler le head (fin)*/
+/*  styler le main (debut)*/
+main{
+    width: 1200px;
+    height: 646px;
+    margin-top: 20px;
+    background-image: url(photos/header.png);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+main p , main span{
+    color: #fff;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 25px;
+}
+main span  {
+    font-weight: 300;
+    
+}
+main p::first-letter{
+    text-transform: capitalize;
+}
+main button{ 
+    margin: 10px;
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+/*  styler le main (fin)*/
+/*  styler l'article des cards (debut)*/
+article{
+    width: 1200px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 380px;
+    height: 472px; 
+    margin-top: 20px;
+}
+.card p{
+    margin-top: 10px;
+}
+.card .prix{
+    color: #A18A68;
+}
+.article_header{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.article_header a{
+    color: #A18A68;
+}
+section{
+    width: 1146px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+section p{
+    margin: 12px;
+}
+section h4{
+    margin-top: 30px;
+    align-self: flex-start;
+}
+section .section_img{
+    height: 300;
+    border-radius: 8px;
+}
+section ul{ 
+    align-self: flex-start;
+    margin-left: 60px;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul{
+    width: 500px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.sicial_media div{
+    margin: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.sicial_media{
+    width: 400px;
+    position: relative;
+}
+.sicial_media ul{
+    width: 200px;
+    position: absolute;
+    right: 0px;
+}
