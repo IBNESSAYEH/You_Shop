@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+/* centraliser verticalement le contenu du body */
+body{
+    padding: 20px; 
+}
+
+/*  styler le head (debut)*/
+header{
+    width: 1200px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo a{
+    color: #686AA1;
+    font-family:'Allerta Stencil', sans-serif;
+    font-size: 25px;
+}
+.logo span{
+    color: #A18A68;
+}
+nav{
+    width: 500px;
+    height: 27px;
+    display: flex;
+    
+    justify-content: space-between;
+   
+}
+nav ul{
+    width: 318px;
+    height: 7px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .list_icon{
+    width: 200px;
+    padding-top: 25px;
+}
+nav .list_icon img{
+    width: 18px;
+}
+
+nav ul:first-child{
+    border-right: 1px solid #707070;
+}
+/*  styler le head (fin) */
+/* styler la section du detail des produits (debut)*/
+section{
+    width : 80%;
+    height: 80vh;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+section .imgProduit, section .infoProduit{
+    height: 100%;
+    width: 50%;
+    border-radius: 6px;
+}
+section img{
+    height: 100%;
+}
+section .infoProduit{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    background-color:rgba(235, 230, 230, 0.2);
+}
+.listInfo{
+    list-style: circle;
+}
+section .infoProduit .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.vote{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+
+.material-symbols-outlined {
+  color: rgb(246, 255, 0);
+}
+
+/* styler la section du detail des produits (fin)*/
+/* footer style (debut) */
+footer{
+    width: 100%;
+    height: 60px;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul{
+    width: 500px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.sicial_media div{
+    margin: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.sicial_media{
+    width: 400px;
+    position: relative;
+}
+.sicial_media ul{
+    width: 200px;
+    position: absolute;
+    right: 0px;
+}
+/* footer style (fin) */

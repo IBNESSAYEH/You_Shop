@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+/* centraliser verticalement le contenu du body */
+body{
+    padding: 20px; 
+}
+
+/*  styler le head (debut)*/
+header{
+    width: 1200px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo a{
+    color: #686AA1;
+    font-family:'Allerta Stencil', sans-serif;
+    font-size: 25px;
+}
+.logo span{
+    color: #A18A68;
+}
+nav{
+    width: 500px;
+    height: 27px;
+    display: flex;
+    
+    justify-content: space-between;
+   
+}
+nav ul{
+    width: 318px;
+    height: 7px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .list_icon{
+    width: 200px;
+    padding-top: 25px;
+}
+nav .list_icon img{
+    width: 18px;
+}
+
+nav ul:first-child{
+    border-right: 1px solid #707070;
+}
+/*  styler le head (fin)*/
+/* cards section style (debut) */
+.livraison{
+    width: 80%;
+    height: fit-content;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: start;
+}
+.livraison  hr{
+    border: 6px solid red ;
+    transform: rotate(90deg);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.livraison  .etapSuivants{
+    border-width: 7px !important;
+    border-color: chartreuse;
+}
+.traitementLivraison{
+    width: 100%;
+    height: fit-content;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.traitementLivraison img{
+    width: 10rem;
+    height: 10rem;
+    border: red 3px solid;
+    border-radius: 6px;
+}
+.imgLivraison{
+    width: 10rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.actuel {
+    border: rgb(4, 244, 64) 3px solid !important; 
+}
+#actuel{
+    padding: 6px;
+    border-bottom: solid 3px rgb(4, 244, 64);
+}
+
+/*  cards section style (fin)*/
+/* footer style (debut) */
+footer{
+    width: 100%;
+    height: 60px;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul{
+    width: 500px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.sicial_media div{
+    margin: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.sicial_media{
+    width: 400px;
+    position: relative;
+}
+.sicial_media ul{
+    width: 200px;
+    position: absolute;
+    right: 0px;
+}
+/* footer style (fin) */

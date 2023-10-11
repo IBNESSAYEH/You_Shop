@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+/* centraliser verticalement le contenu du body */
+body{
+    padding: 20px; 
+}
+
+/*  styler le head (debut)*/
+header{
+    width: 1200px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo a{
+    color: #686AA1;
+    font-family:'Allerta Stencil', sans-serif;
+    font-size: 25px;
+}
+.logo span{
+    color: #A18A68;
+}
+nav{
+    width: 500px;
+    height: 27px;
+    display: flex;
+    
+    justify-content: space-between;
+   
+}
+nav ul{
+    width: 318px;
+    height: 7px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .list_icon{
+    width: 200px;
+    padding-top: 25px;
+}
+nav .list_icon img{
+    width: 18px;
+}
+
+nav ul:first-child{
+    border-right: 1px solid #707070;
+}
+/*  styler le head (fin)*/
+/* cards section style (debut) */
+.cards{
+    margin-top: 3rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.card h3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 6px;
+}
+.card h3 span{
+    padding: 0.5rem;
+    font-family: serif;
+}
+.buttonPayement {
+    background-color: #4DC82E;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonPayement:hover{  
+    transform: scale(1.1);
+}
+.buttonPayement a{
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+}
+/*  cards section style (fin)*/
+/* footer style (debut) */
+footer{
+    width: 100%;
+    height: 60px;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul{
+    width: 500px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.sicial_media div{
+    margin: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.sicial_media{
+    width: 400px;
+    position: relative;
+}
+.sicial_media ul{
+    width: 200px;
+    position: absolute;
+    right: 0px;
+}
+/* footer style (fin) */
