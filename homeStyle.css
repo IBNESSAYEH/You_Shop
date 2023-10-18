@@ -9,13 +9,16 @@
 }
 /* centraliser verticalement le contenu du body */
 body{
-    padding: 20px; 
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   justify-content: center;
 }
 
 /*  styler le head (debut)*/
 header{
-    width: 1200px;
-    height: 42px;
+    width: 90%;
+    height: 62px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +33,7 @@ header{
     color: #A18A68;
 }
 nav{
-    width: 500px;
+    width: 40%;
     height: 27px;
     display: flex;
     
@@ -38,7 +41,7 @@ nav{
    
 }
 nav ul{
-    width: 318px;
+    width:50%;
     height: 7px;
     display: flex;
     padding: 20px;
@@ -46,7 +49,7 @@ nav ul{
     align-items: center;
 }
 nav .list_icon{
-    width: 200px;
+    width: 40%;
     padding-top: 25px;
 }
 nav .list_icon img{
@@ -59,10 +62,12 @@ nav ul:first-child{
 /*  styler le head (fin)*/
 /*  styler le main (debut)*/
 main{
-    width: 1200px;
+    width: 90%;
     height: 646px;
-    margin-top: 20px;
+    margin: 20px auto;
     background-image: url(photos/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -95,16 +100,17 @@ main button{
 /*  styler le main (fin)*/
 /*  styler l'article des cards (debut)*/
 article{
-    width: 1200px;
-    margin: 20px;
+    width: 98%;
+    margin: auto;
+    gap: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .card{
-    width: 380px;
-    height: 472px; 
+    min-width: 200px;
+    height: 400px; 
     margin-top: 20px;
 }
 .card p{
@@ -117,19 +123,19 @@ article{
     width: 100%;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .article_header a{
     color: #A18A68;
 }
 section{
-    width: 1146px;
-    margin: 30px auto;
+    width: 95%;
+    margin: 5rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
 }
 section p{
     margin: 12px;
@@ -139,23 +145,33 @@ section h4{
     align-self: flex-start;
 }
 section .section_img{
-    height: 300;
+    min-width: 100%;
     border-radius: 8px;
 }
 section ul{ 
     align-self: flex-start;
     margin-left: 60px;
 }
+nav button span{
+  
+    color:rgb(248, 246, 246);
+    background: #ad1680;
+    outline-color:none;
+    border-color: none;
+}
+.menu{
+    display: none;
+}
 /* footer style (debut) */
 footer{
-    width: 100%;
+    width: 90%;
     height: 60px;
     margin: 40px 0px;
     display: flex;
     justify-content: space-between;
 }
 footer ul{
-    width: 500px;
+    width: 45%;
     margin: 10px 0px;
     display: flex;
     justify-content: space-around;
@@ -167,12 +183,89 @@ footer ul{
     justify-content: space-between;
 }
 .sicial_media{
-    width: 400px;
+    width: 30%;
     position: relative;
 }
 .sicial_media ul{
-    width: 200px;
+    width: 100%;
     position: absolute;
     right: 0px;
 }
 /* footer style (fin) */
+/* start responsive code */
+@media screen and (max-width: 1250px){
+    nav{
+        display: none;
+    }
+    .menu{
+        display: inline-block;
+        position:relative;
+        top: 0.2rem ;
+        right: 2rem;
+    }
+    main{
+        width: 98%;
+        height: 20rem;
+        margin: auto;
+        background: #ccc;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* footer style (debut) */
+footer{
+    width: 98%;
+    margin:2rem auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+footer .links{
+    width: 45%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+
+}
+.sicial_media div{
+    margin: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.sicial_media{
+    width: 30%;
+    position: relative;
+}
+.sicial_media ul{
+    width: 100%;
+    position: absolute;
+    right: 0px;
+}
+/* footer style (fin) */
+}
+@media screen and (max-width: 760px){
+    section .section_img{
+        min-width: 100%;
+        position: relative;
+        right:15rem;
+        border-radius: 8px;
+    }
+    footer{
+       flex-direction: column;
+       align-items: center;
+       gap: 1rem;
+    }
+    footer ul{
+        width: 70%;
+        text-align: center;
+    }
+    .flech{
+        display: none;
+    }
+}
+
+/* end responsive code */

@@ -59,6 +59,16 @@ nav .list_icon img{
 nav ul:first-child{
     border-right: 1px solid #707070;
 }
+nav button span{
+  
+    color:rgb(248, 246, 246);
+    background: #ad1680;
+    outline-color:none;
+    border-color: none;
+}
+.menu{
+    display: none;
+}
 /*  styler le head (fin)*/
 /* payement section style (debut) */
 section{
@@ -76,8 +86,8 @@ section h3{
 .buttonPayement {
     background-color: #4DC82E;
     border-radius: 1rem;
-    width: 15rem;
-    height: 3rem;
+    width: 70%;
+    padding: 1rem;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -131,3 +141,69 @@ footer ul{
     right: 0px;
 }
 /* footer style (fin) */
+
+/* start responsive code */
+@media screen and (max-width: 1250px){
+    nav{
+        display: none;
+    }
+    .menu{
+        position:absolute;
+        top: 2rem ;
+        right: 3rem;
+    display: inline-block;
+}
+    /* footer style (debut) */
+footer{
+    width: 98%;
+    margin:2rem auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+footer .links{
+    width: 45%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+
+}
+.sicial_media div{
+    margin: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.sicial_media{
+    width: 30%;
+    position: relative;
+}
+.sicial_media ul{
+    width: 100%;
+    position: absolute;
+    right: 0px;
+}
+/* footer style (fin) */
+}
+@media screen and (max-width: 760px){
+    .icons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer{
+       flex-direction: column;
+       align-items: center;
+       gap: 1rem;
+    }
+    footer ul{
+        width: 70%;
+        text-align: center;
+    }
+    .flech{
+        display: none;
+    }
+}
+
+/* end responsive code */
