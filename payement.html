@@ -24,7 +24,7 @@
         <nav>
             <ul >
                 <li><a href="#">shop</a></li>
-                <li><a href="#">blog</a></li>
+                <li><a href="detailProduit.html">blog</a></li>
                 <li><a href="livraison.html">our story</a></li>
             </ul>
             <ul class="list_icon">
@@ -42,11 +42,55 @@
     <!-- la fin du header du page -->
 
     <!-- le debut de section de payement  -->
-    <section >
-        <h2>Total</h2>
+    <section class="formSection">
+        <form action="">
+        <div class="form1">
+            <div>
+                <label for="">Nom :</label>
+            <input type="text" placeholder="entrer votre nom">
+            </div>
+            <div>
+                <label for="">Prenom :</label>
+                <input type="text" placeholder="entrer votre prenom">
+            </div>
+            <div>
+                <label for="">Numero du telephone :</label>
+            <input type="text" placeholder="entrer votre numero du telephone">
+            
+            </div>
+            <div>
+                <label for="">CIN :</label>
+                <input type="text" placeholder="entrer votre CIN">
+            </div>
+            
+        </div>
+        <div class="form2">
+            <div>
+                <label for="">Addresse :</label>
+            <input type="text" placeholder="entrer votre addresse">
+            </div>
+            <div>
+                <label for="">Email :</label>
+                <input type="text" placeholder="entrer votre email">
+            </div>
+            <div>
+                <label for="">Pays :</label>
+            <input type="text" placeholder="entrer votre pays">
+            
+            </div>
+            <div>
+                <label for="">Ville :</label>
+                <input type="text" placeholder="entrer votre ville">
+            </div>
+        </div>
+        <input class="submit" type="submit" value="submit">
+    </form>
+    </section>
+    <section class="sectionPayement">
+        <h2><span>Total : $</span class="prix">  180</h2>
         <hr>
-        <h3><span>SousTotal : </span class="prix"> $ 180</h3>
-        <h3><span>Livraison : </span class="prix"> $ 30</h3>
+        <h3><span>SousTotal : $</span class="prix1">  180</h3>
+        <h3><span>Livraison : $</span class="prix2">  30</h3>
         <hr>
         <div class="buttonPayement">
             <a href="payement.html">Acheter</a>
@@ -85,8 +129,8 @@
      </div>
  </footer>
  <!-- la fin du footer -->
-
- 
+ <script src="indexEvent.js"></script>
+ <script src="events.js"></script>
  
 </body>
 </html>

@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
 <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&display=swap" rel="stylesheet">
     
 <title>Document</title>
@@ -24,7 +26,7 @@
     <nav>
         <ul >
             <li><a href="#">shop</a></li>
-            <li><a href="#">blog</a></li>
+            <li><a href="detailProduit.html">blog</a></li>
             <li><a href="livraison.html">our story</a></li>
         </ul>
         <ul class="list_icon">
@@ -32,8 +34,8 @@
             <li><a href="panier.html"><img src="photos/icon02.png" alt=""></a></li>
             <li><a href="#"><img src="photos/icon3.png" alt=""></a></li>
         </ul>
-       
-    </nav> <ul  class="menu">
+        
+    </nav><ul  class="menu">
             <li><button><span class="material-symbols-outlined">
                 menu
                 </span></button></li>
@@ -44,23 +46,23 @@
     <!-- le debut de section des cards  -->
     <section class="cards">
         
-        <div class="card">
+        <div class="card ">
             <img src="photos/img01.jpg" alt="">
-           <h3><span>Total : $60</span>  <span>Qte : 3</span>  </h3>
-           
+            <h3><span>Total : $<span class="total">60</span> </span>  <span class="qte"><i class="plus fa-solid fa-plus" style="color: #000000;"></i>Qte :<div class="quantite"> 3</div> <i class="minus fa-solid fa-minus" style="color: #000000;"></i><i class="delete fa-solid fa-trash" id="trash" style="color: #A18A68;"></i></span>  </h3>
+        
         </div>
-        <div class="card">
+        <div class="card ">
             <img src="photos/img2.jpg" alt="">
-            <h3><span>Total : $60</span>  <span>Qte : 3</span>  </h3>
-        </div>
-        <div class="card">
+            <h3><span>Total : $<span class="total">60</span></span>  <span class="qte"><i class="plus fa-solid fa-plus" style="color: #000000;"></i> Qte :<div class="quantite"> 3</div><i class="minus fa-solid fa-minus" style="color: #000000;"></i><i class="delete fa-solid fa-trash" id="trash" style="color: #A18A68;"></i></span>  </h3>
+       </div>
+        <div class="card ">
             <img src="photos/img3.jpg" alt="">
-            <h3><span>Total : $60</span>  <span>Qte : 3</span>  </h3>
+            <h3><span>Total : $<span class="total">60</span></span>  <span class="qte"><i class="plus fa-solid fa-plus" style="color: #000000;"></i> Qte :<div class="quantite"> 3</div><i class="minus fa-solid fa-minus" style="color: #000000;"></i><i class="delete fa-solid fa-trash" id="trash" style="color: #A18A68;"></i></span>  </h3>
         </div>
         
     </section>
     <div class="buttonPayement">
-        <a href="payement.html">Acheter</a>
+        <a href="payement.html">Acheter <span class="totalPayement"></span></a>
     </div>
     <!-- la fin de section des cards  -->
 
@@ -88,8 +90,8 @@
      </div>
  </footer>
  <!-- la fin du footer -->
-
- 
+ <script src="indexEvent.js"></script>
+ <script src="events.js"></script>
  
 </body>
 </html>
